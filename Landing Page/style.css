@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.devloperimg{
+    background-image: url(./images/developer.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.introtext{
+    font-weight: 500;
+    padding-top: 55px;
+    padding-left: 25vw;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    line-height: 60px;
+}
+.t{
+    font-size: 55px;
+}
+
+.doforyou_cont{
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.doforyou{
+    padding: 80px;
+    width: 100vw;
+    text-align: center;
+}
+
+.you{
+    font-size:55px ;
+}
+
+.img{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px,1fr));
+    gap: 20px;
+    background-color: rgb(230, 230, 230);
+}
+
+.card{
+    width:320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-out;
+}
+
+h2,p{
+    padding: 14px 20px;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.2s ease-in;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    background-color: rgb(143, 167, 23);
+    padding: 30px;
+}
+
+.about{
+    background-color: rgb(195, 40, 63);
+    padding: 30px;
+}
+
+h3{
+    padding: 10px;
+    font-size: 4śś0px;
+}

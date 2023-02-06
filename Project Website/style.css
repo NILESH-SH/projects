@@ -1,0 +1,94 @@
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--purple600);
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+nav{
+    padding: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.project_text{
+    font-size: 30px;
+    font-weight: 700;
+}
+.nav_content{
+    display: flex;
+    gap: 17px;
+    font-size: 20px;
+}   
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+a:hover{
+    border-bottom: 2px solid rgb(238, 47, 22);
+    transition: 0.2s;
+}
+
+.html{
+    scroll-margin: 50px;
+    background-color: var(--purple300);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 20px;
+    gap: 20px;
+    place-items: center;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.html_text {
+  padding:20px;
+  position: relative;
+  top: -60px;
+  color: rgba(255, 255, 255, 0);
+  margin-bottom: -60px;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-30px);
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.card:hover .html_text {
+  background: white;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-color);
+  transform: translateY(0px);
+}
